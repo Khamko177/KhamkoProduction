@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="lo">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Khamko Production - ໜ້າເພຈມີມສຸດຮາ ສຳລັບຄົນຂີ້ຄ້ານ ແລະ ຄົນຄິດຫຼາຍ. Funny captions, memes, and chaotic energy.">
+    <meta name="keywords" content="Khamko Production, Lao memes, funny captions, meme page, Lao humor">
+    <meta property="og:title" content="Khamko Production - ສຸດຍອດໜ້າເພຈມີມລາວ">
+    <meta property="og:description" content="ໜ້າເພຈນີ້ມີຢູ່ເພາະຊີວິດຈິງມັນຈິງຈັງເກີນໄປແລ້ວ 💀">
+    <meta property="og:type" content="website">
+    <title>Khamko Production 💀 — ສຸດຍອດໜ້າເພຈມີມລາວ</title>
+
+    <!-- Google Fonts: Bold modern sans-serif -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Lao:wght@400;600;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ============== LOADING ANIMATION ============== -->
+    <div id="loader" class="loader">
+        <div class="loader-content">
+            <div class="loader-emoji">💀</div>
+            <div class="loader-text">Khamko Production</div>
+            <div class="loader-bar"><div class="loader-bar-fill"></div></div>
+            <div class="loader-sub">ກຳລັງໂຫຼດຄວາມຮາ...</div>
+        </div>
+    </div>
+
+    <!-- ============== FLOATING EMOJIS BACKGROUND ============== -->
+    <div class="floating-emojis" aria-hidden="true">
+        <span class="float-emoji">💀</span>
+        <span class="float-emoji">😂</span>
+        <span class="float-emoji">🔥</span>
+        <span class="float-emoji">👁️</span>
+        <span class="float-emoji">🤡</span>
+        <span class="float-emoji">✨</span>
+        <span class="float-emoji">💅</span>
+        <span class="float-emoji">🥲</span>
+        <span class="float-emoji">😭</span>
+        <span class="float-emoji">⚡</span>
+    </div>
+
+    <!-- ============== STICKY NAVBAR ============== -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">
+                <span class="logo-mark"><img src="logo.jpg" alt="Khamko Production"></span>
+                <span class="logo-text">Khamko<span class="logo-dot">.</span>Prod</span>
+            </a>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#captions">Captions</a></li>
+                <li><a href="#categories">Categories</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <button id="themeToggle" class="theme-toggle" aria-label="Toggle theme">
+                    <span class="theme-icon">🌙</span>
+                </button>
+                <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ============== HERO SECTION ============== -->
+    <header id="hero" class="hero">
+        <div class="hero-glow"></div>
+
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="live-dot"></span>
+                <span id="liveCounter">1,247</span> ຄົນກຳລັງຫົວຢູ່ຕອນນີ້
+            </div>
+
+            <div class="hero-logo">
+                <div class="logo-circle">
+                    <img src="logo.jpg" alt="Khamko Production Logo">
+                </div>
+            </div>
+
+            <h1 class="hero-title">
+                Khamko <span class="accent">Production</span>
+            </h1>
+
+            <p class="hero-tagline">
+                WELCOME TO KHAMKO PRODUCTION💀
+            </p>
+
+            <p class="hero-sub">
+                ມີມ • ແຄັບຊັນ • 24/7
+            </p>
+
+            <div class="hero-cta">
+                <a href="#captions" class="btn btn-primary">
+                    <span>📖 Read Captions</span>
+                </a>
+                <a href="https://www.facebook.com/KhamkoProduction" class="btn btn-secondary" target="_blank" rel="noopener">
+                    <span>👍 Follow Page</span>
+                </a>
+            </div>
+
+            <div class="hero-stats">
+                <div class="stat">
+                    <div class="stat-num">24K</div>
+                    <div class="stat-label">Followers</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-num">100M</div>
+                    <div class="stat-label">Likes</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-num">∞</div>
+                    <div class="stat-label">ມຸກຮ້າຍ</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="scroll-indicator">
+            <span>scroll ຫາ ຄວາມຮາ</span>
+            <div class="scroll-arrow">↓</div>
+        </div>
+    </header>
+
+    <!-- ============== RANDOM CAPTION GENERATOR ============== -->
+    <section class="generator-section">
+        <div class="container">
+            <div class="generator-card glass">
+                <div class="generator-left">
+                    <div class="generator-label">🎲 Random Caption Generator</div>
+                    <p id="randomCaption" class="generator-text">
+                        ກົດປຸ່ມເພື່ອສຸ່ມມຸກຮ້າຍ ໆ ມາໃຫ້ເຈົ້າ
+                    </p>
+                </div>
+                <button id="randomBtn" class="btn btn-primary btn-glow">
+                    <span>🎰 Generate</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============== TRENDING CAPTIONS SECTION ============== -->
+    <section id="captions" class="captions-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-tag">🔥 TRENDING</div>
+                <h2 class="section-title">Captions ທີ່ກຳລັງດັງ</h2>
+                <p class="section-sub">ມຸກທີ່ຄົນແຊຣແບບບໍ່ໄດ້ຄິດ</p>
+            </div>
+
+            <div class="captions-grid" id="captionsGrid">
+                <!-- Card 1 -->
+                <article class="caption-card">
+                    <div class="caption-header">
+                        <div class="avatar"><img src="logo.jpg" alt="Khamko Production"></div>
+                        <div class="caption-meta">
+                            <div class="caption-name">Khamko Production</div>
+                            <div class="caption-time">2 ຊມ ກ່ອນ • 🌍</div>
+                        </div>
+                        <button class="more-btn" aria-label="More">⋯</button>
+                    </div>
+                    <p class="caption-text">
+                        ແຕ່ລະໂພສ, ແຕ່ລະແຊຣ, ໂນ໊ດ, ສະຕໍຣີ <br>
+                        ເຂົາລົງແຕ່ລະຢ່າງ ບໍ່ກ່ຽວຫຍັງກັບຂ້ອຍເລີຍ <br>
+                        ສູນນນນເດ!!!!! 💀
+                    </p>
+                    <div class="caption-reactions">
+                        <span class="reaction">😂</span>
+                        <span class="reaction">💀</span>
+                        <span class="reaction">🔥</span>
+                        <span class="reaction-count">12.4K</span>
+                    </div>
+                    <div class="caption-actions">
+                        <button class="action-btn like-btn"><span>👍</span> Like</button>
+                        <button class="action-btn"><span>💬</span> Comment</button>
+                        <button class="action-btn share-btn"><span>↗️</span> Share</button>
+                    </div>
+                </article>
+
+                <!-- Card 2 -->
+                <article class="caption-card">
+                    <div class="caption-header">
+                        <div class="avatar"><img src="logo.jpg" alt="Khamko Production"></div>
+                        <div class="caption-meta">
+                            <div class="caption-name">Khamko Production</div>
+                            <div class="caption-time">5 ຊມ ກ່ອນ • 🌍</div>
+                        </div>
+                        <button class="more-btn" aria-label="More">⋯</button>
+                    </div>
+                    <p class="caption-text">
+                        ແຊັທລົມກັບເຮົາບອກຮັກ ບອກຄິດຮອດ <br>
+                        ພໍຄາວຫນຶ່ງໄປລົງສະຕໍຣິເສົ້າ <br>
+                        ຈັກໃຜຕາຍ 🙂
+                    </p>
+                    <div class="caption-reactions">
+                        <span class="reaction">😭</span>
+                        <span class="reaction">💀</span>
+                        <span class="reaction">🤡</span>
+                        <span class="reaction-count">8.9K</span>
+                    </div>
+                    <div class="caption-actions">
+                        <button class="action-btn like-btn"><span>👍</span> Like</button>
+                        <button class="action-btn"><span>💬</span> Comment</button>
+                        <button class="action-btn share-btn"><span>↗️</span> Share</button>
+                    </div>
+                </article>
+
+                <!-- Card 3 -->
+                <article class="caption-card">
+                    <div class="caption-header">
+                        <div class="avatar"><img src="logo.jpg" alt="Khamko Production"></div>
+                        <div class="caption-meta">
+                            <div class="caption-name">Khamko Production</div>
+                            <div class="caption-time">7 ຊມ ກ່ອນ • 🌍</div>
+                        </div>
+                        <button class="more-btn" aria-label="More">⋯</button>
+                    </div>
+                    <p class="caption-text">
+                        ໃຊ້ໂທລະສັບລຸ້ນໃດນໍ <br>
+                        ເບິ່ງສະຕໍຣີໄດ້ <br>
+                        ແຕ່ຕອບແຊັທບໍ່ໄດ້ 🤡✨
+                    </p>
+                    <div class="caption-reactions">
+                        <span class="reaction">😂</span>
+                        <span class="reaction">🤡</span>
+                        <span class="reaction">🔥</span>
+                        <span class="reaction-count">24.1K</span>
+                    </div>
+                    <div class="caption-actions">
+                        <button class="action-btn like-btn"><span>👍</span> Like</button>
+                        <button class="action-btn"><span>💬</span> Comment</button>
+                        <button class="action-btn share-btn"><span>↗️</span> Share</button>
+                    </div>
+                </article>
+
+                <!-- Card 4 -->
+                <article class="caption-card">
+                    <div class="caption-header">
+                        <div class="avatar"><img src="logo.jpg" alt="Khamko Production"></div>
+                        <div class="caption-meta">
+                            <div class="caption-name">Khamko Production</div>
+                            <div class="caption-time">12 ຊມ ກ່ອນ • 🌍</div>
+                        </div>
+                        <button class="more-btn" aria-label="More">⋯</button>
+                    </div>
+                    <p class="caption-text">
+                        ຫົວໃຈຂາຍໄດ້ 3.9 ລ້ານບາດ <br>
+                        ແຕ່ຍົກໃຫ້ເຂົາໄປຟຣີໆ <br>
+                        ແຕ່ເຂົາບໍ່ເອົາຊໍ້າ 💀
+                    </p>
+                    <div class="caption-reactions">
+                        <span class="reaction">💀</span>
+                        <span class="reaction">😭</span>
+                        <span class="reaction">😂</span>
+                        <span class="reaction-count">19.7K</span>
+                    </div>
+                    <div class="caption-actions">
+                        <button class="action-btn like-btn"><span>👍</span> Like</button>
+                        <button class="action-btn"><span>💬</span> Comment</button>
+                        <button class="action-btn share-btn"><span>↗️</span> Share</button>
+                    </div>
+                </article>
+
+                <!-- Card 5 -->
+                <article class="caption-card">
+                    <div class="caption-header">
+                        <div class="avatar"><img src="logo.jpg" alt="Khamko Production"></div>
+                        <div class="caption-meta">
+                            <div class="caption-name">Khamko Production</div>
+                            <div class="caption-time">1 ມື້ ກ່ອນ • 🌍</div>
+                        </div>
+                        <button class="more-btn" aria-label="More">⋯</button>
+                    </div>
+                    <p class="caption-text">
+                        ຢູ່ກັບອີກຄົນ ລົມກັບອີກຄົນ <br>
+                        ແຊັດກັບອີກຄົນ <br>
+                        ແຕ່ຄິດຮອດອີກຄົນ <br>
+                        ຊົ່ວຄັກ!!! ອັນນີ້ຫມູ່ເຮັດ 🙂‍↕️
+                    </p>
+                    <div class="caption-reactions">
+                        <span class="reaction">😂</span>
+                        <span class="reaction">🔥</span>
+                        <span class="reaction">💀</span>
+                        <span class="reaction-count">31.2K</span>
+                    </div>
+                    <div class="caption-actions">
+                        <button class="action-btn like-btn"><span>👍</span> Like</button>
+                        <button class="action-btn"><span>💬</span> Comment</button>
+                        <button class="action-btn share-btn"><span>↗️</span> Share</button>
+                    </div>
+                </article>
+
+                <!-- Card 6 -->
+                <article class="caption-card">
+                    <div class="caption-header">
+                        <div class="avatar"><img src="logo.jpg" alt="Khamko Production"></div>
+                        <div class="caption-meta">
+                            <div class="caption-name">Khamko Production</div>
+                            <div class="caption-time">1 ມື້ ກ່ອນ • 🌍</div>
+                        </div>
+                        <button class="more-btn" aria-label="More">⋯</button>
+                    </div>
+                    <p class="caption-text">
+                        ສູ້ແດດສູ້ຝົນໄດ້ເບິດ <br>
+                        ແຕ່ສູ້ຄົນໃນໃຈເຂົາບໍ່ໄດ້ 🥲
+                    </p>
+                    <div class="caption-reactions">
+                        <span class="reaction">😭</span>
+                        <span class="reaction">💀</span>
+                        <span class="reaction">😂</span>
+                        <span class="reaction-count">15.8K</span>
+                    </div>
+                    <div class="caption-actions">
+                        <button class="action-btn like-btn"><span>👍</span> Like</button>
+                        <button class="action-btn"><span>💬</span> Comment</button>
+                        <button class="action-btn share-btn"><span>↗️</span> Share</button>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============== MEME CATEGORIES SECTION ============== -->
+    <section id="categories" class="categories-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-tag">📂 CATEGORIES</div>
+                <h2 class="section-title">ເລືອກປະເພດຄວາມຮາ</h2>
+                <p class="section-sub">ຄວາມເຈັບປວດທີ່ຈັດໝວດໝູ່ໃຫ້ແລ້ວ</p>
+            </div>
+
+            <div class="categories-grid">
+                <div class="category-card" data-category="love">
+                    <div class="category-icon">💔</div>
+                    <h3 class="category-title">Love Fails</h3>
+                    <p class="category-desc">ມຸກຄວາມຮັກທີ່ເຈັບແຕ່ຫົວ</p>
+                    <div class="category-count">142 posts</div>
+                </div>
+
+                <div class="category-card" data-category="daily">
+                    <div class="category-icon">☕</div>
+                    <h3 class="category-title">Daily Life</h3>
+                    <p class="category-desc">ຊີວິດປະຈຳວັນທີ່ບໍ່ມີຫຍັງດີ</p>
+                    <div class="category-count">298 posts</div>
+                </div>
+
+                <div class="category-card" data-category="friend">
+                    <div class="category-icon">🤝</div>
+                    <h3 class="category-title">Friendship</h3>
+                    <p class="category-desc">ໝູ່ດີ ໝູ່ຮ້າຍ ໝູ່ບໍ່ຍືມເງິນ</p>
+                    <div class="category-count">187 posts</div>
+                </div>
+
+                <div class="category-card" data-category="school">
+                    <div class="category-icon">📚</div>
+                    <h3 class="category-title">School / Work</h3>
+                    <p class="category-desc">ໂຮງຮຽນ ແລະ ບ່ອນເຮັດວຽກ = ນະຮົກ</p>
+                    <div class="category-count">256 posts</div>
+                </div>
+
+                <div class="category-card" data-category="chaos">
+                    <div class="category-icon">⚡</div>
+                    <h3 class="category-title">Random Chaos</h3>
+                    <p class="category-desc">ມຸກທີ່ບໍ່ມີໝວດ ແຕ່ຮ້າຍສຸດ</p>
+                    <div class="category-count">412 posts</div>
+                </div>
+
+                <div class="category-card" data-category="genz">
+                    <div class="category-icon">💅</div>
+                    <h3 class="category-title">Gen Z Energy</h3>
+                    <p class="category-desc">ມຸກທີ່ຜູ້ໃຫຍ່ບໍ່ເຂົ້າໃຈ</p>
+                    <div class="category-count">365 posts</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============== ABOUT SECTION ============== -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="about-card glass">
+                <div class="about-emoji">💀</div>
+                <div class="section-tag">👋 ABOUT US</div>
+                <h2 class="about-title">
+                    "ຄິດຮອດໄດ້ບໍ່?"
+                </h2>
+                <p class="about-text">
+                    Khamko Production ແມ່ນບ່ອນທີ່ເຮົາເອົາຄວາມເຈັບປວດໃນຊີວິດ
+                    ມາແປເປັນມຸກໃຫ້ທຸກຄົນຫົວ. ບໍ່ມີຄຳແນະນຳ, ບໍ່ມີຄຳໃຫ້ກຳລັງໃຈ,
+                    ມີແຕ່ມຸກວນໆ.
+                </p>
+                <p class="about-text-sub">
+                    ຖ້າເຈົ້າມາຫາແຮງບັນດານໃຈ → ໄປບ່ອນອື່ນ <br>
+                    ຖ້າເຈົ້າມາຫາມຸກ → ມາຖືກບ່ອນແລ້ວ ✨
+                </p>
+
+                <div class="about-tags">
+                    <span class="tag">#NoMotivation</span>
+                    <span class="tag">#JustMemes</span>
+                    <span class="tag">#LaoHumor</span>
+                    <span class="tag">#GenZEnergy</span>
+                    <span class="tag">#ChaosOnly</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============== FOOTER ============== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <span class="logo-mark"><img src="logo.jpg" alt="Khamko Production"></span>
+                        <span class="logo-text">Khamko<span class="logo-dot">.</span>Prod</span>
+                    </div>
+                    <p class="footer-tagline">
+                        Funny first. ຄິດທີຫຼັງ.
+                    </p>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Navigate</h4>
+                    <a href="#hero">Home</a>
+                    <a href="#captions">Captions</a>
+                    <a href="#categories">Categories</a>
+                    <a href="#about">About</a>
+                </div>
+
+                <div class="footer-social">
+                    <h4>Follow ໃຫ້ໂດນ</h4>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/KhamkoProduction" class="social-icon" aria-label="Facebook" target="_blank" rel="noopener">📘</a>
+                        <a href="#" class="social-icon" aria-label="TikTok">🎵</a>
+                        <a href="#" class="social-icon" aria-label="Instagram">📸</a>
+                        <a href="#" class="social-icon" aria-label="YouTube">▶️</a>
+                    </div>
+                    <a href="https://www.facebook.com/KhamkoProduction" class="footer-fb-btn" target="_blank" rel="noopener">👍 Follow on Facebook</a>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2026 Khamko Production. ສະຫງວນລິຂະສິດທິ໌ ບໍ່ໃຫ້ໃຜຂະໂມຍມຸກ 💀</p>
+                <p class="footer-sub">Made with ☕ and 0% motivation</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ============== TOAST NOTIFICATION ============== -->
+    <div id="toast" class="toast">Copied! ✨</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
